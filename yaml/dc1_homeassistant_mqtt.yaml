@@ -13,14 +13,14 @@ esphome:
 substitutions:
   config_version: 'v2019.12.09.001'
   #设备名称（多个dc1改成不一样的，API接入和ESPHOME容器会识别这个）
-  device_name: phicomm_dc1_1
+  device_name: phicomm_dc1_3
   #MQTT设备名称（多个dc1改成不一样的，MQTT接入及控制会识别这个）
   mqtt_device_name: ChilerenRoom
   ### 这里之所以会取2个设备名称独立开来，是为了便于通过MQTT接入服务端（如ioBroker）后的设备分类和集中
   #WiFi_SSID名称
-  wifi_ssid: '777'
+  wifi_ssid: 'Richard'
   #WiFi密码
-  wifi_password: '1122334455'
+  wifi_password: '007zhuli'
   #如果SSID是隐藏的，设置为true
   wifi_fast_connect: 'false'
   #WiFi离线多久后重启设备，秒s/分钟min/小时h，不需要此功能设置为0s，建议设置0s，防止异常重启，或者设置的大一些
@@ -30,13 +30,13 @@ substitutions:
   #电量统计的数据刷新时间（内部刷新时间，非上报周期），秒s/分钟min/小时h
   cse7766_update_interval: 1s
   #MQTT代理服务器IP地址
-  mqtt_broker: '192.168.88.115'
+  mqtt_broker: 'home.liuja.com'
   #MQTT代理服务器端口
   mqtt_port: '1883'
   #MQTT代理服务器用户名
-  #mqtt_username: '1'
+  mqtt_username: 'Richard'
   #MQTT代理服务器密码
-  #mqtt_password: '1'
+  mqtt_password: '007zhuli'
   #与MQTT服务端失去连接多久后重启设备，秒s/分钟min/小时h，不需要此功能设置为0s，建议设置0s，防止异常重启，或者设置的大一些
   mqtt_reboot_timeout: 0s
   #保持MQTT socket存活时间
